@@ -257,6 +257,63 @@ td {
     font-family: sans-serif;
 }
 
+@media screen and (max-width: 1200px) {
+    .lines-img {
+        bottom: -55px;
+        z-index: 100;
+        right: 0;
+        width: 330px;
+    }
+
+    .human-img {
+        position: absolute;
+        right: -100px;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer .fs-120 {
+        font-size: 85px;
+    }
+
+    .footer .fs-70 {
+        font-size: 53px;
+    }
+
+    .footer .fs-24 {
+        font-size: 16px;
+    }
+
+    .footer .text-center img {
+        width: 150px;
+    }
+
+    .fs-140 {
+        font-size: 100px;
+    }
+
+    .banner .fs-70 {
+        font-size: 45px;
+    }
+
+    .reserve-btn {
+        background-color: #EF0000 !important;
+        color: white;
+        font-size: 27px;
+        height: 70px;
+        font-family: 'rift-bold';
+    }
+
+    .banner img.img-fluid.position-absolute.logo-img {
+        width: 135px;
+    }
+
+    .founding-members .fs-60 {
+        font-size: 45px;
+    }
+}
+
 
 @media screen and (max-width:767px) {
     iframe {
@@ -299,6 +356,9 @@ td {
         font-family: 'rift-bold';
         min-width: 200px !important;
         padding: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .hero .d-flex.bg-black.justify-content-start.align-items-center.gap-3.z-20.position-relative,
@@ -499,5 +559,10 @@ td {
 
     .copy p.sans-serif.mb-0 {
         font-size: 11px;
+    }
+
+    .banner img.img-fluid.position-absolute.logo-img {
+        width: 75px;
+        bottom: 65px;
     }
 }
