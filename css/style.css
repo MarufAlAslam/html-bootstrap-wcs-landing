@@ -1,0 +1,503 @@
+@font-face {
+    font-family: 'rift-regular';
+    src: url("../fonts/Rift\ Regular.otf");
+}
+
+@font-face {
+    font-family: 'rift-light';
+    src: url("../fonts/Rift\ Light.otf");
+}
+
+@font-face {
+    font-family: 'rift-medium';
+    src: url("../fonts/Rift\ Medium.otf");
+}
+
+@font-face {
+    font-family: 'rift-bold';
+    src: url("../fonts/Rift\ Bold.otf");
+}
+
+* {
+    font-family: 'rift-regular';
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px !important;
+}
+
+iframe {
+    width: 100%;
+    height: 576px;
+    background-color: black;
+}
+
+/* hero */
+.banner {
+    min-height: 576px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 25px 50px;
+}
+
+.fs-140 {
+    font-size: 140px;
+}
+
+.bold {
+    font-family: 'rift-bold';
+}
+
+.medium {
+    font-family: 'rift-medium';
+}
+
+.fs-70 {
+    font-size: 70px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.btn {
+    outline: unset !important;
+    box-shadow: unset !important;
+}
+
+.reserve-btn {
+    background-color: #EF0000 !important;
+    color: white;
+    font-size: 35px;
+    height: 70px;
+    font-family: 'rift-bold';
+}
+
+.fs-35 {
+    font-size: 35px;
+}
+
+.zero {
+    background-image: url("../img/zero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-color: #EF0000;
+    height: 70px;
+    position: relative;
+    left: -20px;
+    padding-left: 100px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.human-img {
+    position: absolute;
+    right: -35px;
+    bottom: 0;
+}
+
+.logo-img {
+    right: 50px;
+    bottom: 50px;
+    z-index: 200;
+}
+
+.lines-img {
+    bottom: -75px;
+    z-index: 100;
+    right: 0;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.lh-1 {
+    line-height: 1;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.text-red {
+    color: #EF0000;
+}
+
+.fs-80 {
+    font-size: 80px;
+}
+
+.fs-200 {
+    font-size: 200px;
+}
+
+sup.text-red.fs-80.bold.lh-1 {
+    position: relative;
+    top: 10px;
+}
+
+.fs-50 {
+    font-size: 50px;
+}
+
+.card.position-relative .card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.white-lines {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 60%;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.w-33 {
+    width: 33.33%;
+}
+
+.border-r-5 {
+    border-right: 10px solid white !important;
+}
+
+.border-l-5 {
+    border-left: 10px solid white !important;
+}
+
+.bg-eeeded {
+    background-color: #EEEDED;
+}
+
+.bg-dbdbdb {
+    background-color: #DBDBDB;
+}
+
+.border-eeeded {
+    border-top: 1px solid #EEEDED;
+    border-bottom: 1px solid #EEEDED;
+}
+
+.text-blue {
+    color: #0E76BC;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.border-x-0 {
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+.btn-gray {
+    background-color: #C4C4C4 !important;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.btn-red {
+    background-color: #EF0000 !important;
+    color: white;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+}
+
+.bg-red {
+    background-color: #EF0000;
+}
+
+.fs-120 {
+    font-size: 120px;
+}
+
+.svg-zero {
+    position: relative;
+    right: -20px;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+
+@media screen and (max-width:767px) {
+    iframe {
+        height: auto;
+    }
+
+    .banner {
+        min-height: auto;
+        padding: 10px;
+    }
+
+    .fs-140 {
+        font-size: 40px;
+    }
+
+    .hero .fs-70 {
+        font-size: 20px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .human-img {
+        position: absolute;
+        right: -40px;
+        bottom: 65px;
+        width: 270px;
+    }
+
+    .logo-img {
+        right: 10px;
+        bottom: 90px;
+        width: 60px;
+    }
+
+    .reserve-btn {
+        background-color: #EF0000 !important;
+        color: white;
+        font-size: 23px;
+        height: 70px;
+        font-family: 'rift-bold';
+        min-width: 200px !important;
+        padding: 0 !important;
+    }
+
+    .hero .d-flex.bg-black.justify-content-start.align-items-center.gap-3.z-20.position-relative,
+    .bottom-banner .d-flex.bg-black.justify-content-start.align-items-center.gap-3.z-20.position-relative {
+        transform: scale(0.58);
+        transform-origin: left;
+        width: 100%;
+        background: black;
+    }
+
+    .zero.fs-35 {
+        font-size: 28px;
+    }
+
+    .lines-img {
+        bottom: -21px;
+        z-index: 100;
+        right: 0;
+        width: 135px;
+    }
+
+    .offer .fs-60 {
+        font-size: 20px;
+    }
+
+    .offer .fs-40 {
+        font-size: 13px;
+    }
+
+    sup.text-red.fs-80.bold.lh-1 {
+        font-size: 25px;
+    }
+
+    .offer .fs-200 {
+        font-size: 70px;
+    }
+
+    .offer .d-flex.gap-5.justify-content-center.align-items-center {
+        gap: 15px !important;
+    }
+
+    .offer .bg-black.py-5 {
+        padding: 20px 0 !important;
+    }
+
+    .reasons .fs-50 {
+        font-size: 20px;
+    }
+
+    .reasons .fs-70 {
+        font-size: 30px;
+    }
+
+    img.img-fluid.down-img {
+        width: 30px;
+    }
+
+    .reasons .d-flex.justify-content-center.align-items-center.gap-5 {
+        gap: 20px !important;
+    }
+
+    section.hero .banner {
+        overflow: hidden;
+    }
+
+    .reasons .card.h-100 {
+        height: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .white-lines {
+        height: 10%;
+    }
+
+    section.founding-members .fs-60 {
+        font-size: 21px;
+    }
+
+    .white-lines {
+        height: 30%;
+    }
+
+    .founding-members .bg-black.pt-5.pb-3.px-5.position-relative {
+        padding: 10px !important;
+        padding-top: 30px !important;
+    }
+
+    .white-lines {
+        height: 50%;
+    }
+
+    table h3.bold.text-black.fs-20.mb-5 {
+        font-size: 10px;
+    }
+
+    span.d-inline-flex.w-100.px-4.text-center.bold.justify-content-center.align-items-center.py-2.bg-black.rounded-top.text-white.fs-20,
+    span.d-inline-flex.w-100.px-4.text-center.bold.justify-content-center.align-items-center.py-2.bg-black.rounded-top.text-red.fs-20 {
+        font-size: 13px;
+    }
+
+    td span.bold.fs-20.lh-1 {
+        font-size: 10px;
+    }
+
+    td span.d-inline-flex.flex-column.w-100.px-4.text-center.bold.py-5.justify-content-center.border-x-0.align-items-center.border-white.border.bg-eeeded.text-black.fs-20 {
+        font-size: 10px;
+    }
+
+    td span.d-inline-flex.flex-column.w-100.px-4.py-5.border.text-center.bold.justify-content-center.border-x-0.align-items-center.border-white.bg-dbdbdb.text-black.fs-20 {
+        font-size: 10px;
+    }
+
+    td span.text-blue.lh-1.fs-15 {
+        font-size: 7px;
+    }
+
+    td img.img-fluid {
+        max-width: 90%;
+    }
+
+    td a.btn.btn-gray.w-100.fs-30.bold,
+    td a.btn.btn-red.w-100.fs-30.bold {
+        font-size: 18px;
+    }
+
+    .form .bg-black.p-5.form-bg {
+        padding: 25px 15px !important;
+    }
+
+    .form .fs-60 {
+        font-size: 34px;
+    }
+
+    .form .fs-40 {
+        font-size: 13px;
+    }
+
+    .offerings .fs-70 {
+        font-size: 40px;
+    }
+
+    .offerings .fs-40 {
+        font-size: 30px;
+    }
+
+    .offerings .col-md-4 {
+        text-align: center;
+    }
+
+    .bottom-banner .fs-70 {
+        font-size: 20px;
+    }
+
+    .footer .fs-120 {
+        font-size: 35px;
+    }
+
+    .footer .fs-70 {
+        font-size: 20px;
+    }
+
+    .footer .fs-30 {
+        font-size: 16px;
+    }
+
+    .footer .fs-20 {
+        font-size: 12px;
+    }
+
+    .footer .fs-24 {
+        font-size: 8px;
+    }
+
+    .footer .card-body {
+        padding: 5px;
+    }
+
+    .footer .fs-24 {
+        font-size: 7px;
+    }
+
+    .footer a img.img-fluid {
+        width: 20px;
+    }
+
+    img.img-fluid.facebook-icon {
+        width: 27px !important;
+        margin-left: 5px;
+    }
+
+    .footer .col-4 .text-center img.img-fluid {
+        width: 60px;
+    }
+
+    .footer .row {
+        overflow: hidden !important;
+    }
+
+    .copy p.sans-serif.mb-0 {
+        font-size: 11px;
+    }
+}
